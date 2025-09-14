@@ -5,7 +5,7 @@ on:
       - opened
 jobs:
   assign-label:
-    permissions:  #by default it has all permissions but we can limit them by specifying them here
+    permissions:  #This specifies the minimum permissions required for the GITHUB_TOKEN in this job
       issues: write
     runs-on: ubuntu-latest
     steps:
